@@ -2,7 +2,7 @@ import { useEffect, useState } from "preact/hooks";
 
 export default function PositionList(params) {
     let { positions } = params;
-    let [length, setLength] = useState(10);
+    let [length, setLength] = useState(1000);
     useEffect(function () {
         let vip = localStorage.getItem("vip");
         if (vip) {
